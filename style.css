@@ -1,0 +1,86 @@
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#111;
+font-family:Arial;
+overflow:hidden;
+}
+
+.card{
+background:#fff6f6;
+padding:30px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 0 25px pink;
+}
+
+#heart{
+position:relative;
+width:260px;
+height:220px;
+margin:auto;
+}
+
+.block{
+width:20px;
+height:20px;
+background:red;
+position:absolute;
+border-radius:50%;
+}
+
+h2{
+color:#e63946;
+margin-top:20px;
+}
+
+.cute{
+font-size:22px;
+margin-top:10px;
+}
+
+/* floating hearts */
+
+.float{
+position:absolute;
+bottom:-20px;
+color:red;
+animation:rise 6s linear infinite;
+}
+
+@keyframes rise{
+0%{transform:translateY(0);opacity:1;}
+100%{transform:translateY(-800px);opacity:0;}
+}transform:scale(1.2);
+}
+}
+
+h1{
+color:#d6004d;
+font-weight:normal;
+animation:text 2s infinite alternate;
+}
+
+@keyframes text{
+from{opacity:.6;}
+to{opacity:1;}
+}
+
+/* floating hearts */
+
+.float{
+position:fixed;
+bottom:0;
+font-size:20px;
+animation:float 5s linear forwards;
+}
+
+@keyframes float{
+to{
+transform:translateY(-100vh);
+opacity:0;
+}
+}
